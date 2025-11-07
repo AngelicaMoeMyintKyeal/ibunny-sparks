@@ -1,19 +1,23 @@
-# IBunnySparks
+# iBunnySparks 🐰✨
 
-This is a [Skip](https://skip.tools) dual-platform app project.
+A cross-platform creative writing and idea recording app built with [Skip](https://skip.tools).
 
+## Features
+- 📝 Record and organize creative ideas
+- 🔍 Search through your ideas  
+- 📱 Works on both iOS and Android
+- 💾 Automatic local storage
 
-<!-- TODO: add iOS screenshots to fastlane metadata
-## iPhone Screenshots
+## Built With
+- [Skip](https://skip.tools) - Cross-platform Swift development
+- SwiftUI - Modern UI framework
 
-<img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/1_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/2_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/3_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/4_en-US.png" style="width: 18%" /> <img alt="iPhone Screenshot" src="Darwin/fastlane/screenshots/en-US/5_en-US.png" style="width: 18%" />
--->
-
-<!-- TODO: add Android screenshots to fastlane metadata
-## Android Screenshots
-
-<img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/4_en-US.png" style="width: 18%" /> <img alt="Android Screenshot" src="Android/fastlane/metadata/android/en-US/images/phoneScreenshots/5_en-US.png" style="width: 18%" />
--->
+## Building
+```bash
+skip build --platform ios
+skip build --platform android  
+skip test
+skip export
 
 ## Building
 

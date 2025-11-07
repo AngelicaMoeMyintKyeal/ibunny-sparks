@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-and-build:
+    name: Test and Build
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Skip
+      run: |
+        curl -Ls https://skip.tools/install.sh | sh
+        echo "$HOME/.skip/bin" >> $GITHUB_PATH
+        
+    - name: Verify Skip installation
+      run: |
+        skip --version
+        which skip
+        
+    - name: Run tests
+      run: skip test
+      
+    - name: Build iOS
+      run: skip build --platform ios
+      
+    - name: Build Android
+      run: skip build --platform android
+      
+    - name: Export Android APK
+      run: skip export
+      
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ibunny-sparks-apk
+        path: export/*.apk
+        retention-days: 7

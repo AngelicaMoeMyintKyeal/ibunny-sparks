@@ -1,76 +1,34 @@
-## User settings
-
-# vi
-.*.swp
-.*.swo
-
-# macOS
-.DS_Store
-
-# gradle properties
-local.properties
-.gradle/
-.android/
-.kotlin/
-Android/app/keystore.jks
-Android/app/keystore.properties
-
-xcodebuild*.log
-
-default.profraw
-*.mobileprovision
-*.cer
-*.p12
-*.p12.password
-
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-.swiftpm
+# Skip build artifacts
 .build/
-build/
+.skip-build/
 DerivedData/
-xcuserdata/
-xcodebuild*.log
-.idea/
+.skipstone/
 
-*.moved-aside
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-*.xcscmblueprint
-*.xccheckout
+# Android build artifacts
+*.apk
+*.aab
+.gradle/
+build/
 
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
+# iOS build artifacts  
 *.ipa
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
 # Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-Packages/
-Package.pins
-Package.resolved
-#*.xcodeproj
+.swiftpm/
 
-Carthage/Build/
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
 
-# fastlane
+# Environment files
+.env
+.env.local
 
-**/fastlane/apikey.json
-**/fastlane/report.xml
-**/fastlane/README.md
-**/fastlane/Preview.html
-**/fastlane/test_output
+# macOS
+.DS_Store
+
+# Skip export
+export/
