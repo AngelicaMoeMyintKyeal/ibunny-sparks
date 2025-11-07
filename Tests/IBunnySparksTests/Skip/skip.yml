@@ -1,0 +1,2 @@
+# Skip configuration for test target
+transpile: true
